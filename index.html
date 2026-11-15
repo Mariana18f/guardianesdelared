@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guardianes de la Red</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <h1>Guardianes de la Red</h1>
+  <p>Hoy empezás tu entrenamiento como Guardián Digital de la Ciudad Conectada.</p>
+  <p class="puntos">Puntos: <strong id="puntaje">0</strong> · Rango: <strong id="rango">Aprendiz</strong></p>
+</header>
+
+<nav>
+  <a href="#mision">La misión</a>
+  <a href="#entrenamiento">Entrenamiento</a>
+  <a href="#recursos">Recursos</a>
+  <a href="#pruebas">Pruebas</a>
+</nav>
+
+<main>
+
+  <section id="mision">
+    <h2>La misión</h2>
+    <p>La Ciudad Conectada es un lugar enorme donde la gente se comunica por celular, redes sociales y mensajes. Pero también hay peligros: estafas, noticias falsas y personas que no respetan a los demás.</p>
+    <p>Los Guardianes Digitales cuidan la ciudad. <strong>Vos sos el nuevo Guardián o la nueva Guardiana.</strong> Para ganar tu insignia, leé el entrenamiento y superá tres pruebas.</p>
+
+    <h3>¿A quién está dirigido?</h3>
+    <p>A jóvenes y adultos que están empezando a usar internet. No hace falta tener conocimientos previos. Solo saber leer y tener ganas de aprender.</p>
+
+    <h3>Objetivos de aprendizaje</h3>
+    <p>Al terminar, vas a poder:</p>
+    <ul>
+      <li>Explicar con tus palabras qué es la ciudadanía digital.</li>
+      <li>Reconocer tus derechos y responsabilidades cuando usás internet.</li>
+      <li>Aplicar normas básicas de seguridad y de respeto en internet.</li>
+    </ul>
+  </section>
+
+  <section id="entrenamiento">
+    <h2>Tu entrenamiento</h2>
+
+    <h3>Lección 1 · ¿Qué es la ciudadanía digital?</h3>
+    <p>Ciudadanía digital es la forma en que usamos internet todos los días. Incluye las redes sociales, el celular, los mensajes y los videos. Un buen ciudadano digital usa la tecnología de forma segura y trata a los demás con respeto.</p>
+
+    <h3>Lección 2 · Tu identidad digital</h3>
+    <p>Tu identidad digital es todo lo que mostrás de vos en internet: tus fotos, tus mensajes y lo que compartís. Todo lo que subís a internet queda guardado. Por eso, pensá antes de publicar.</p>
+
+    <h3>Lección 3 · Cuidá tu información personal</h3>
+    <p>Nunca compartas tu contraseña con otras personas. No des tu dirección ni tu número de teléfono a desconocidos. Usá contraseñas difíciles de adivinar y revisá quién puede ver tus publicaciones.</p>
+
+    <h3>Lección 4 · El respeto en internet</h3>
+    <p>Tratá a las personas en internet como te gustaría que te traten a vos. No escribas cosas que puedan lastimar a otra persona. Antes de compartir una noticia, preguntate: ¿es verdadera? Si tenés dudas, no la compartas.</p>
+
+    <h3>Lección 5 · ¿Y si tenés un problema?</h3>
+    <p>Si alguien te molesta o te hace sentir mal, contale a una persona de confianza y guardá capturas de pantalla como prueba. Podés bloquear y denunciar a esa persona en la aplicación. Pedir ayuda no es un error, es lo correcto.</p>
+  </section>
+
+  <section id="recursos">
+    <h2>Recursos del Guardián</h2>
+
+    <h3>Video: jóvenes y ciudadanía digital (Agesic)</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/QAiN164WQ-o?si=fo2g8vwJX_Urgeo3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h3>Videoteca de Ceibal</h3>
+    <p><a href="https://ceibal.edu.uy/institucional/ciudadania-digital/videoteca" target="_blank">Abrir la Videoteca de Ceibal</a></p>
+
+    <h3>Imágenes</h3>
+    <img src="imagen1.jpeg"width=500 alt="Manos de varias personas usando el celular alrededor de una mesa">
+    <img src="imagen2.jpeg"width=500 alt="Ilustración de personas conectadas por una red de íconos digitales">
+  </section>
+
+  <section id="pruebas">
+    <h2>Las pruebas del Guardián</h2>
+    <p>Cada acierto suma <strong>10 puntos</strong>. Cada error resta <strong>5 puntos</strong>.</p>
+
+    <form id="form-act1">
+      <fieldset>
+        <legend>Prueba 1 · El juramento</legend>
+        <p>¿Qué es la ciudadanía digital?</p>
+
+        <input type="radio" id="a1-a" name="act1">
+        <label for="a1-a">Tener muchos seguidores en redes sociales</label><br>
+
+        <input type="radio" id="a1-b" name="act1">
+        <label for="a1-b">Usar internet de forma segura y respetuosa</label><br>
+
+        <input type="radio" id="a1-c" name="act1">
+        <label for="a1-c">Comprar cosas por internet</label><br>
+
+        <input type="radio" id="a1-d" name="act1">
+        <label for="a1-d">Tener el celular más nuevo</label><br>
+
+        <button type="submit" id="boton-act1">Comprobar</button>
+        <p id="msg-act1"></p>
+      </fieldset>
+    </form>
+
+    <form id="form-act2">
+      <fieldset>
+        <legend>Prueba 2 · El desconocido</legend>
+        <p>Un desconocido te pide tus datos personales. Antes de compartirlos con alguien que no conozco, primero debo...</p>
+
+        <label for="a2-combo">Elegí cómo completar la frase:</label>
+        <select id="a2-combo">
+          <option value="">-- Elegí una opción --</option>
+          <option value="contrasena">darle mi contraseña</option>
+          <option value="pensar">pensarlo bien y desconfiar</option>
+          <option value="publicar">publicarlo en mis redes</option>
+        </select><br>
+
+        <button type="submit" id="boton-act2">Comprobar</button>
+        <p id="msg-act2"></p>
+      </fieldset>
+    </form>
+
+    <form id="form-act3">
+      <fieldset>
+        <legend>Prueba 3 · Verdad o trampa</legend>
+        <p>Decidí si la frase es verdadera o falsa: "Puedo compartir mi contraseña con un amigo de confianza."</p>
+
+        <input type="radio" id="vf-v" name="act3">
+        <label for="vf-v">Verdadero</label><br>
+
+        <input type="radio" id="vf-f" name="act3">
+        <label for="vf-f">Falso</label><br>
+
+        <button type="submit" id="boton-act3">Comprobar</button>
+        <p id="msg-act3"></p>
+      </fieldset>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>Guardianes de la Red · Objeto de Aprendizaje sobre ciudadanía digital</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
